@@ -1,0 +1,27 @@
+<div class="m-5">
+    <h1 class="text-custom-blue pt-5 pb-2">Создание дохода/расхода</h1>
+    <div class="w-75">
+        <div class="input-group pt-1 pb-3 w-50">
+            <select class="form-select" aria-label="example" id="select-category">
+                <option value="income" id="select-category-1">доход</option>
+                <option value="expense" id="select-category-2" >расход</option>
+            </select>
+        </div>
+        <div class="input-group pt-1 pb-3 w-50">
+            <select class="form-select" aria-label="example" id="select-category-name"></select>
+        </div>
+        <div class="input-group pt-1 pb-3 w-50">
+            <input type="number" class="form-control font-15" id="select-amount" placeholder="Сумма в $..." step="10" min="0">
+        </div>
+        <div class="input-group pt-1 pb-3 w-50">
+            <input type="date" class="form-control font-15" id="select-date" placeholder="Дата...">
+        </div>
+        <div class="input-group pt-1 pb-3 w-50">
+            <input type="text" class="form-control font-15" id="select-comment" placeholder="Комментарий...">
+        </div>
+    </div>
+    <div class="pt-1">
+        <button class="btn btn-success me-2 font-14 font-weight-500" id="create-both">Создать</button>
+        <button class="btn btn-danger font-14 font-weight-500" id="cancel">Отмена</button>
+    </div>
+</div>

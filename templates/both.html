@@ -1,0 +1,54 @@
+<div class="m-5">
+    <h1 class="text-custom-blue pt-5">Доходы и расходы</h1>
+    <div class="py-3">
+        <button class="btn btn-success me-2 font-14 font-weight-500" id="create-income">Создать доход</button>
+        <button class="btn btn-danger font-14 font-weight-500" id="create-expense">Создать расход</button>
+    </div>
+    <div class="py-4" id="buttons-period-control">
+        <button type="button" class="active btn btn-outline-secondary fs-6 fw-bolder me-3" id="btn-today"
+                style="width: 100px;" aria-description="interval">Сегодня
+        </button>
+        <button type="button" class="btn btn-outline-secondary fs-6 fw-bolder me-3 ms-1" id="btn-week"
+                style="width: 100px;" aria-description="week">Неделя
+        </button>
+        <button type="button" class="btn btn-outline-secondary fs-6 fw-bolder me-3 ms-1" id="btn-month"
+                style="width: 100px;" aria-description="month">Месяц
+        </button>
+        <button type="button" class="btn btn-outline-secondary fs-6 fw-bolder me-3 ms-1" id="btn-year"
+                style="width: 100px;" aria-description="year">Год
+        </button>
+        <button type="button" class="btn btn-outline-secondary fs-6 fw-bolder me-3 ms-1" id="btn-all-time"
+                style="width: 100px;" aria-description="all">Все
+        </button>
+        <button type="button" class="btn btn-outline-secondary fs-6 fw-bolder me-3 ms-1" id="btn-interval"
+                style="width: 100px;" aria-description="interval">Интервал
+        </button>
+
+        <div class="dropdown d-inline-block">
+            <span class="ms-1">c</span>
+            <input class="btn rounded-2 text-secondary" type="date" id="date-from" aria-description="interval">
+        </div>
+        <div class="dropdown d-inline-block">
+            <span class="ms-1">по</span>
+            <input class="btn rounded-2 text-secondary" type="date" id="date-to" aria-description="interval">
+        </div>
+    </div>
+    <table class="table border-top text-center mt-2">
+        <thead class="text-custom-blue">
+        <tr>
+            <th scope="col">№ Операции</th>
+            <th scope="col">Тип</th>
+            <th scope="col">Категория</th>
+            <th scope="col">Сумма</th>
+            <th scope="col">Дата</th>
+            <th scope="col">Комментарий</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody id="tbody-income-expense">
+        </tbody>
+    </table>
+</div>
+
+
+

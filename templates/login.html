@@ -1,0 +1,36 @@
+<div class="container d-flex justify-content-center align-items-center text-center h-100">
+    <form class="needs-validation" novalidate style="width: 397px;">
+        <img class="mb-5 pb-2" src="../static/images/logo.svg" alt="Логотип">
+        <h1 class="text-custom-blue mb-3 py-1">Вход</h1>
+
+        <div class="input-group mb-2">
+            <span class="input-group-text p-0 rounded-0 rounded-start">
+                <img src="../static/images/icon-mail.svg" alt="Email">
+            </span>
+            <input type="email" class="form-control rounded-2" id="email" placeholder="Электронная почта" required>
+            <div class="invalid-feedback">
+                email не зарегистрирован
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <span class="input-group-text p-0 rounded-0 rounded-start">
+                <img src="../static/images/icon-lock.svg" alt="Password">
+            </span>
+            <input type="password" class="form-control rounded-2" id="password" placeholder="Пароль" required>
+            <div class="invalid-feedback">
+                пароль не верный
+            </div>
+        </div>
+
+        <div class="form-check mb-3 text-start">
+            <input class="form-check-input me-2" type="checkbox" id="rememberCheck" required>
+            <label class="form-check-label font-12 align-middle" for="rememberCheck">Запомнить меня</label>
+        </div>
+
+        <button class="w-100 btn btn-primary mb-2" type="button" id="btnEnter">Войти</button>
+
+        <p class="text-start font-12">Ещё нет аккаунта?<a href="#/signup" class="ms-2">Пройдите регистрацию</a></p>
+    </form>
+</div>
+
